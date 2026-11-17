@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaí | Carrinho</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="pagina-carrinho">
+
+    <header class="home-header">
+        <a href="home.html" class="logo">
+            <h1>Montaí</h1>
+            <p>monte do seu jeito</p>
+        </a>
+
+        <a href="carrinho.html" class="botao-carrinho" aria-label="Carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <main class="carrinho-conteudo">
+
+        <section class="titulo-pagina">
+            <h2>Carrinho</h2>
+            <p>Confira seus produtos antes de continuar.</p>
+        </section>
+
+        <section id="itens-carrinho" class="lista-itens-carrinho">
+
+            <!-- Item de exemplo 1 -->
+            <article class="item-carrinho">
+                <img src="assets/img/chocolate.jpg" alt="Sorvete de chocolate e morango">
+
+                <div class="item-carrinho-info">
+                    <h3>Copo Grande</h3>
+                    <p>Chocolate + Morango</p>
+                    <strong>R$ 22,00</strong>
+
+                    <div class="controle-quantidade">
+                        <button type="button" aria-label="Diminuir quantidade">−</button>
+                        <span>1</span>
+                        <button type="button" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
+
+                <button type="button" class="remover-item" aria-label="Remover item">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+            </article>
+
+            <!-- Item de exemplo 2 -->
+            <article class="item-carrinho">
+                <img src="assets/img/cookies.jpg" alt="Casquinha de cookies">
+
+                <div class="item-carrinho-info">
+                    <h3>Casquinha</h3>
+                    <p>Cookies + Doce de Leite</p>
+                    <strong>R$ 16,00</strong>
+
+                    <div class="controle-quantidade">
+                        <button type="button" aria-label="Diminuir quantidade">−</button>
+                        <span>1</span>
+                        <button type="button" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
+
+                <button type="button" class="remover-item" aria-label="Remover item">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
+            </article>
+
+        </section>
+
+        <section class="resumo-pedido">
+
+            <h2>Resumo do pedido</h2>
+
+            <div class="linha-resumo">
+                <span>Subtotal</span>
+                <strong id="subtotal-carrinho">R$ 38,00</strong>
+            </div>
+
+            <div class="linha-resumo">
+                <span>Taxa de serviço</span>
+                <strong id="taxa-servico">R$ 3,00</strong>
+            </div>
+
+            <div class="linha-resumo linha-total">
+                <span>Total</span>
+                <strong id="total-carrinho">R$ 41,00</strong>
+            </div>
+
+            <a href="checkout.html" class="botao-principal botao-checkout">
+                IR PARA O CHECKOUT
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="cardapio.html" class="continuar-comprando">
+                Continuar comprando
+            </a>
+
+        </section>
+
+    </main>
+
+    <nav class="menu-inferior">
+        <a href="home.html" class="menu-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+        </a>
+        <a href="cardapio.html" class="menu-item">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Cardápio</span>
+        </a>
+        <a href="montar-sorvete.html" class="menu-item">
+            <i class="fa-solid fa-ice-cream"></i>
+            <span>Montar</span>
+        </a>
+        <a href="carrinho.html" class="menu-item ativo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Carrinho</span>
+        </a>
+    </nav>
+<script src="script.js" defer></script>
+</body>
+</html>

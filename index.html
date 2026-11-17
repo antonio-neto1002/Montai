@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Montaí | Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="pagina-login">
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <!-- Logo e apresentação -->
+            <div class="login-logo">
+                <h1>Montaí</h1>
+                <p>monte do seu jeito</p>
+            </div>
+
+            <!-- Título -->
+            <div class="login-titulo">
+                <h2>Bem-vindo!</h2>
+                <p>Entre na sua conta para continuar.</p>
+            </div>
+
+            <!-- Formulário -->
+            <form id="formLogin">
+
+                <div class="campo-login">
+                    <label for="email">E-mail</label>
+
+                    <div class="input-container">
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@email.com"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="campo-login">
+                    <label for="senha">Senha</label>
+
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="login-opcoes">
+                    <label>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar de mim
+                    </label>
+
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    ENTRAR
+                </button>
+
+                <p id="msgLogin" class="mensagem-login" hidden></p>
+
+            </form>
+
+            <!-- Separador -->
+            <div class="login-separador">
+                <span>ou continue com</span>
+            </div>
+
+            <!-- Login social -->
+            <div class="login-social">
+
+                <button type="button" class="btn-social">
+                    <i class="fa-brands fa-google"></i>
+                    Google
+                </button>
+
+                <button type="button" class="btn-social">
+                    <i class="fa-brands fa-apple"></i>
+                    Apple
+                </button>
+
+            </div>
+
+            <!-- Cadastro -->
+            <div class="login-cadastro">
+                <p>
+                    Ainda não tem uma conta?
+                    <a href="#">Cadastre-se</a>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+<script src="script.js" defer></script>
+</body>
+</html>

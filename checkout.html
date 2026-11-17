@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaí | Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="pagina-checkout">
+
+    <header class="home-header">
+        <a href="home.html" class="logo">
+            <h1>Montaí</h1>
+            <p>monte do seu jeito</p>
+        </a>
+
+        <a href="carrinho.html" class="botao-carrinho" aria-label="Voltar ao carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <main class="checkout-conteudo">
+
+        <section class="titulo-pagina">
+            <h2>Checkout</h2>
+            <p>Revise e confirme seu pedido.</p>
+        </section>
+
+        <form id="form-checkout">
+
+            <!-- Entrega ou retirada -->
+            <section class="bloco-checkout">
+                <h3>
+                    <i class="fa-solid fa-truck"></i>
+                    Entrega ou retirada
+                </h3>
+
+                <div class="opcoes-entrega">
+                    <label class="opcao-entrega selecionada">
+                        <input type="radio" name="tipo-entrega" value="entrega" checked>
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Entrega</span>
+                    </label>
+
+                    <label class="opcao-entrega">
+                        <input type="radio" name="tipo-entrega" value="retirada">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Retirada</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Endereço -->
+            <section class="bloco-checkout" id="bloco-endereco">
+
+                <div class="titulo-bloco-checkout">
+                    <h3>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Endereço
+                    </h3>
+
+                    <button type="button" class="botao-alterar">
+                        Alterar
+                    </button>
+                </div>
+
+                <div class="endereco-atual">
+                    <p id="endereco-resumo">Rua das Flores, 123</p>
+                    <span>Jardim Primavera, São Paulo - SP</span>
+                </div>
+
+                <div class="campos-endereco">
+                    <div class="campo-formulario">
+                        <label for="rua">Rua e número</label>
+                        <input type="text" id="rua" name="rua" placeholder="Digite seu endereço">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="complemento">Complemento (opcional)</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apartamento, referência etc.">
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Pagamento -->
+            <section class="bloco-checkout">
+
+                <div class="titulo-bloco-checkout">
+                    <h3>
+                        <i class="fa-regular fa-credit-card"></i>
+                        Pagamento
+                    </h3>
+
+                    <button type="button" class="botao-alterar">
+                        Alterar
+                    </button>
+                </div>
+
+                <div class="opcoes-pagamento">
+
+                    <label class="opcao-pagamento">
+                        <input type="radio" name="pagamento" value="cartao" checked>
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Cartão de crédito</span>
+                    </label>
+
+                    <label class="opcao-pagamento">
+                        <input type="radio" name="pagamento" value="pix">
+                        <i class="fa-brands fa-pix"></i>
+                        <span>Pix</span>
+                    </label>
+
+                    <label class="opcao-pagamento">
+                        <input type="radio" name="pagamento" value="dinheiro">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span>Dinheiro</span>
+                    </label>
+
+                </div>
+
+                <div class="cartao-resumo">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <span>Cartão terminado em 4242</span>
+                </div>
+
+            </section>
+
+            <!-- Totais -->
+            <section class="bloco-checkout resumo-checkout">
+
+                <h3>Totais</h3>
+
+                <div class="linha-resumo">
+                    <span>Subtotal</span>
+                    <strong id="subtotal-checkout">R$ 32,00</strong>
+                </div>
+
+                <div class="linha-resumo">
+                    <span>Taxa de entrega</span>
+                    <strong id="taxa-entrega">R$ 6,00</strong>
+                </div>
+
+                <div class="linha-resumo linha-total">
+                    <span>Total</span>
+                    <strong id="total-checkout">R$ 38,00</strong>
+                </div>
+
+                <button type="submit" class="botao-principal botao-confirmar">
+                    CONFIRMAR PEDIDO
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+            </section>
+
+        </form>
+
+        <a href="carrinho.html" class="voltar-carrinho">
+            <i class="fa-solid fa-arrow-left"></i>
+            Voltar ao carrinho
+        </a>
+
+    </main>
+<script src="script.js" defer></script>
+</body>
+</html>

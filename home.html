@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Montaí | Página Inicial</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+
+<body class="pagina-home">
+
+    <!-- Cabeçalho -->
+    <header class="home-header">
+
+        <div class="logo">
+            <h1>Montaí</h1>
+            <p>monte do seu jeito</p>
+        </div>
+
+        <a href="carrinho.html" class="botao-carrinho"
+            aria-label="Abrir carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrinho">0</span>
+        </a>
+
+    </header>
+
+    <main class="home-conteudo">
+
+        <!-- Saudação -->
+        <section class="saudacao">
+            <h2>Olá, Ana!</h2>
+            <p>Que bom te ver por aqui!</p>
+        </section>
+
+        <!-- Banner principal -->
+        <section class="banner-montagem">
+
+            <div class="banner-texto">
+                <span>SEU MOMENTO MAIS GOSTOSO</span>
+
+                <h2>
+                    MONTE
+                    <br>
+                    SEU SORVETE
+                </h2>
+
+                <p>Seu sorvete, suas escolhas!</p>
+
+                <a href="montar-sorvete.html"
+                    class="botao-montar">
+                    MONTE AGORA
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="banner-imagem">
+                <img
+                    src="assets/img/sorvete-banner.jpg"
+                    alt="Sorvete personalizado com coberturas"
+                >
+            </div>
+
+        </section>
+
+        <!-- Sabores do dia -->
+        <section class="secao-sabores">
+
+            <div class="titulo-secao">
+                <div>
+                    <h2>Sabores do dia</h2>
+                    <p>Escolha seu sabor favorito!</p>
+                </div>
+
+                <a href="cardapio.html">Ver todos</a>
+            </div>
+
+            <div class="lista-sabores">
+
+                <!-- Morango -->
+                <article class="card-sabor">
+
+                    <img
+                        src="assets/img/morango.jpg"
+                        alt="Sorvete de morango"
+                    >
+
+                    <div class="card-sabor-info">
+                        <h3>Morango</h3>
+                        <p>Leve, cremoso e delicioso.</p>
+                        <span>R$ 8,00</span>
+                    </div>
+
+                    <a href="cardapio.html"
+                        class="botao-escolher">
+                        Escolher
+                    </a>
+
+                </article>
+
+                <!-- Chocolate -->
+                <article class="card-sabor">
+
+                    <img
+                        src="assets/img/chocolate.jpg"
+                        alt="Sorvete de chocolate"
+                    >
+
+                    <div class="card-sabor-info">
+                        <h3>Chocolate</h3>
+                        <p>Para quem ama chocolate.</p>
+                        <span>R$ 8,00</span>
+                    </div>
+
+                    <a href="cardapio.html"
+                        class="botao-escolher">
+                        Escolher
+                    </a>
+
+                </article>
+
+                <!-- Baunilha -->
+                <article class="card-sabor">
+
+                    <img
+                        src="assets/img/baunilha.jpg"
+                        alt="Sorvete de baunilha"
+                    >
+
+                    <div class="card-sabor-info">
+                        <h3>Baunilha</h3>
+                        <p>Clássico e irresistível.</p>
+                        <span>R$ 8,00</span>
+                    </div>
+
+                    <a href="cardapio.html"
+                        class="botao-escolher">
+                        Escolher
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Categorias -->
+        <section class="secao-categorias">
+
+            <div class="titulo-secao">
+                <div>
+                    <h2>Explore nosso cardápio</h2>
+                    <p>Encontre suas combinações favoritas.</p>
+                </div>
+            </div>
+
+            <div class="lista-categorias">
+
+                <a href="cardapio.html?categoria=Sabores"
+                    class="categoria-item">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <span>Sabores</span>
+                </a>
+
+                <a href="cardapio.html?categoria=Toppings"
+                    class="categoria-item">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <span>Toppings</span>
+                </a>
+
+                <a href="cardapio.html?categoria=Doces"
+                    class="categoria-item">
+                    <i class="fa-solid fa-candy-cane"></i>
+                    <span>Doces</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Menu inferior -->
+    <nav class="menu-inferior">
+
+        <a href="home.html" class="menu-item ativo">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+        </a>
+
+        <a href="cardapio.html" class="menu-item">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Cardápio</span>
+        </a>
+
+        <a href="montar-sorvete.html" class="menu-item">
+            <i class="fa-solid fa-ice-cream"></i>
+            <span>Montar</span>
+        </a>
+
+        <a href="carrinho.html" class="menu-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Carrinho</span>
+        </a>
+
+    </nav>
+<script src="script.js" defer></script>
+</body>
+</html>

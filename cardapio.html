@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaí | Cardápio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+</head>
+
+<body class="pagina-cardapio">
+
+    <header class="home-header">
+        <a href="home.html" class="logo">
+            <h1>Montaí</h1>
+            <p>monte do seu jeito</p>
+        </a>
+
+        <a href="carrinho.html" class="botao-carrinho" aria-label="Abrir carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <main class="cardapio-conteudo">
+
+        <section class="titulo-pagina">
+            <h2>Cardápio</h2>
+            <p>Encontre seus sabores e acompanhamentos favoritos.</p>
+        </section>
+
+        <section class="busca-cardapio">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                type="search"
+                id="busca-produto"
+                placeholder="Buscar sabores ou toppings..."
+                aria-label="Buscar produtos"
+            >
+        </section>
+
+        <nav class="filtros-cardapio" aria-label="Filtrar produtos">
+            <button type="button" class="filtro ativo" data-filtro="Todos">Todos</button>
+            <button type="button" class="filtro" data-filtro="Sabores">Sabores</button>
+            <button type="button" class="filtro" data-filtro="Toppings">Toppings</button>
+            <button type="button" class="filtro" data-filtro="Doces">Doces</button>
+        </nav>
+
+        <section class="produtos-cardapio">
+
+            <article class="card-produto" data-categoria="Sabores">
+                <img src="assets/img/chocolate.jpg" alt="Sorvete de chocolate belga">
+                <div class="produto-info">
+                    <h3>Chocolate Belga</h3>
+                    <p>Cremoso e intenso.</p>
+                    <strong>R$ 9,90</strong>
+                    <button type="button" class="botao-escolher" data-produto="Chocolate Belga" data-preco="9.90">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+            <article class="card-produto" data-categoria="Sabores">
+                <img src="assets/img/morango.jpg" alt="Sorvete de morango">
+                <div class="produto-info">
+                    <h3>Morango</h3>
+                    <p>Feito com morangos selecionados.</p>
+                    <strong>R$ 9,90</strong>
+                    <button type="button" class="botao-escolher" data-produto="Morango" data-preco="9.90">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+            <article class="card-produto" data-categoria="Sabores">
+                <img src="assets/img/pistache.jpg" alt="Sorvete de pistache">
+                <div class="produto-info">
+                    <h3>Pistache</h3>
+                    <p>Sabor sofisticado e irresistível.</p>
+                    <strong>R$ 11,90</strong>
+                    <button type="button" class="botao-escolher" data-produto="Pistache" data-preco="11.90">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+            <article class="card-produto" data-categoria="Sabores">
+                <img src="assets/img/cookies.jpg" alt="Sorvete cookies and cream">
+                <div class="produto-info">
+                    <h3>Cookies &amp; Cream</h3>
+                    <p>Com pedaços de cookies crocantes.</p>
+                    <strong>R$ 10,90</strong>
+                    <button type="button" class="botao-escolher" data-produto="Cookies & Cream" data-preco="10.90">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+            <article class="card-produto" data-categoria="Toppings">
+                <img src="assets/img/cookies.jpg" alt="Granulado crocante">
+                <div class="produto-info">
+                    <h3>Granulado</h3>
+                    <p>Um toque crocante para seu sorvete.</p>
+                    <strong>R$ 2,00</strong>
+                    <button type="button" class="botao-escolher" data-produto="Granulado" data-preco="2.00">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+            <article class="card-produto" data-categoria="Doces">
+                <img src="assets/img/morango.jpg" alt="Doce de leite">
+                <div class="produto-info">
+                    <h3>Doce de leite</h3>
+                    <p>Uma cobertura cremosa e especial.</p>
+                    <strong>R$ 3,00</strong>
+                    <button type="button" class="botao-escolher" data-produto="Doce de leite" data-preco="3.00">
+                        Adicionar
+                    </button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <nav class="menu-inferior">
+        <a href="home.html" class="menu-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+        </a>
+        <a href="cardapio.html" class="menu-item ativo">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Cardápio</span>
+        </a>
+        <a href="montar-sorvete.html" class="menu-item">
+            <i class="fa-solid fa-ice-cream"></i>
+            <span>Montar</span>
+        </a>
+        <a href="carrinho.html" class="menu-item">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Carrinho</span>
+        </a>
+    </nav>
+<script src="script.js" defer></script>
+</body>
+</html>

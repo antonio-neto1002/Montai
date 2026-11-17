@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaí | Monte seu sorvete</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body class="pagina-montagem">
+
+    <header class="home-header">
+        <a href="home.html" class="logo">
+            <h1>Montaí</h1>
+            <p>monte do seu jeito</p>
+        </a>
+
+        <a href="carrinho.html" class="botao-carrinho" aria-label="Abrir carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrinho">0</span>
+        </a>
+    </header>
+
+    <main class="montagem-conteudo">
+
+        <section class="titulo-pagina">
+            <h2>Monte seu Sorvete</h2>
+            <p>Personalize do seu jeito e crie sua combinação favorita.</p>
+        </section>
+
+        <section class="progresso-montagem">
+            <div class="progresso-texto">
+                <span>Etapa 3 de 6</span>
+                <span>50%</span>
+            </div>
+
+            <div class="barra-progresso">
+                <div class="barra-progresso-preenchida"></div>
+            </div>
+        </section>
+
+        <section class="selecao-sabores">
+
+            <div class="titulo-secao">
+                <div>
+                    <h2>Sabores</h2>
+                    <p>Escolha até 3 sabores.</p>
+                </div>
+            </div>
+
+            <div class="grade-sabores">
+
+                <button type="button" class="opcao-sabor" data-sabor="Morango">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/morango.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Morango</span>
+                </button>
+
+                <button type="button" class="opcao-sabor" data-sabor="Chocolate">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/chocolate.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Chocolate</span>
+                </button>
+
+                <button type="button" class="opcao-sabor" data-sabor="Baunilha">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/baunilha.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Baunilha</span>
+                </button>
+
+                <button type="button" class="opcao-sabor" data-sabor="Pistache">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/pistache.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Pistache</span>
+                </button>
+
+                <button type="button" class="opcao-sabor" data-sabor="Cookies">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/cookies.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Cookies</span>
+                </button>
+
+                <button type="button" class="opcao-sabor" data-sabor="Uva">
+                    <span class="sabor-imagem">
+                        <img src="assets/img/morango.jpg" alt="">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>Uva</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="sabores-selecionados">
+            <h2>Selecionados</h2>
+            <p>Seus sabores escolhidos aparecem aqui.</p>
+
+            <div id="sabores-escolhidos" class="lista-selecionados">
+                <span class="mensagem-vazia">Nenhum sabor selecionado.</span>
+            </div>
+        </section>
+
+        <div class="acoes-montagem">
+            <a href="cardapio.html" class="botao-secundario">Voltar</a>
+            <button type="button" id="continuar-montagem" class="botao-principal">
+                Continuar
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </main>
+<script src="script.js" defer></script>
+</body>
+</html>
