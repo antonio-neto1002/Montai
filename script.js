@@ -617,3 +617,81 @@ document.addEventListener("DOMContentLoaded", function () {
     atualizarCarrinho();
     atualizarCheckout();
 });
+
+// =========================================
+// CADASTRO DE USUÁRIO - MONTAÍ
+// =========================================
+
+const formCadastro = document.getElementById("formCadastro");
+
+if (formCadastro) {
+
+    const mensagemCadastro = document.getElementById("msgCadastro");
+
+    formCadastro.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value.trim();
+        const email = document.getElementById("emailCadastro").value.trim();
+        const senha = document.getElementById("senhaCadastro").value;
+        const confirmarSenha = document.getElementById("confirmarSenha").value;
+        const termos = document.getElementById("aceitarTermos").checked;
+
+        // Função para exibir mensagens
+        function mostrarMensagemCadastro(texto, tipo) {
+            mensagemCadastro.textContent = texto;
+            mensagemCadastro.className = "mensagem-cadastro " + tipo;
+            mensagemCadastro.hidden = false;
+        }
+
+        // Validar nome
+        if (nome.length < 3) {
+            mostrarMensagemCadastro(
+                "Digite seu nome completo.",
+                "erro"
+            );
+            return;
+        }
+
+        // Validar senha
+        if (senha.length < 8) {
+            mostrarMensagemCadastro(
+                "A senha deve ter pelo menos 8 caracteres.",
+                "erro"
+            );
+            return;
+        }
+
+        // Confirmar senha
+        if (senha !== confirmarSenha) {
+            mostrarMensagemCadastro(
+                "As senhas não são iguais. Confira novamente.",
+                "erro"
+            );
+            return;
+        }
+
+        // Verificar termos
+        if (!termos) {
+            mostrarMensagemCadastro(
+                "Você precisa aceitar os termos de uso.",
+                "erro"
+            );
+            return;
+        }
+
+        // Cadastro demonstrativo
+        mostrarMensagemCadastro(
+            "Cadastro realizado com sucesso! Você será direcionado ao login.",
+            "sucesso"
+        );
+
+        // Voltar para login após sucesso
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 2000);
+
+    });
+
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Montaí | Cadastro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="pagina-cadastro">
+
+    <main class="cadastro-container">
+
+        <section class="cadastro-card">
+
+            <!-- Logo -->
+            <div class="cadastro-logo">
+
+                <a href="index.html" class="voltar-login">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <h1>Montaí</h1>
+                <p>monte do seu jeito</p>
+
+            </div>
+
+            <!-- Título -->
+            <div class="cadastro-titulo">
+                <h2>Crie sua conta</h2>
+                <p>Faça parte do Montaí!</p>
+            </div>
+
+            <!-- Formulário -->
+            <form id="formCadastro">
+
+                <!-- Nome -->
+                <div class="campo-cadastro">
+                    <label for="nome">Nome completo</label>
+
+                    <div class="input-cadastro">
+                        <i class="fa-regular fa-user"></i>
+
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+                            autocomplete="name" required>
+                    </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="campo-cadastro">
+                    <label for="emailCadastro">E-mail</label>
+
+                    <div class="input-cadastro">
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="emailCadastro" name="email" placeholder="seu@email.com"
+                            autocomplete="email" required>
+                    </div>
+                </div>
+
+                <!-- Senha -->
+                <div class="campo-cadastro">
+                    <label for="senhaCadastro">Senha</label>
+
+                    <div class="input-cadastro">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="senhaCadastro" name="senha" placeholder="Crie uma senha"
+                            minlength="8" autocomplete="new-password" required>
+                    </div>
+                </div>
+
+                <!-- Confirmar senha -->
+                <div class="campo-cadastro">
+                    <label for="confirmarSenha">Confirmar senha</label>
+
+                    <div class="input-cadastro">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="confirmarSenha" name="confirmarSenha"
+                            placeholder="Digite sua senha novamente" minlength="8" autocomplete="new-password" required>
+                    </div>
+                </div>
+
+                <!-- Termos -->
+                <div class="cadastro-termos">
+                    <label>
+                        <input type="checkbox" id="aceitarTermos" required>
+
+                        <span>
+                            Aceito os
+                            <a href="#">termos de uso</a>
+                            e a
+                            <a href="#">política de privacidade</a>.
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Botão -->
+                <button type="submit" class="btn-cadastro">
+                    CRIAR MINHA CONTA
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <!-- Mensagem -->
+                <p id="msgCadastro" class="mensagem-cadastro" hidden></p>
+
+            </form>
+
+            <!-- Login -->
+            <div class="cadastro-login">
+                <p>Já possui uma conta?</p>
+
+                <a href="index.html">Faça login</a>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="firebase.js"></script>
+</body>
+
+</html>

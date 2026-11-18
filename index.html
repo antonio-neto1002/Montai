@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Ícones -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- JavaScript -->
-    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body class="pagina-login">
@@ -45,13 +44,7 @@
                     <div class="input-container">
                         <i class="fa-regular fa-envelope"></i>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="seu@email.com"
-                            required
-                        >
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
                     </div>
                 </div>
 
@@ -61,16 +54,11 @@
                     <div class="input-container">
                         <i class="fa-solid fa-lock"></i>
 
-                        <input
-                            type="password"
-                            id="senha"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        >
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                     </div>
                 </div>
 
+                <!-- Opções de login -->
                 <div class="login-opcoes">
                     <label>
                         <input type="checkbox" name="lembrar">
@@ -80,6 +68,7 @@
                     <a href="#">Esqueceu a senha?</a>
                 </div>
 
+                <!-- Botão entrar -->
                 <button type="submit" class="btn-login">
                     ENTRAR
                 </button>
@@ -112,13 +101,14 @@
             <div class="login-cadastro">
                 <p>
                     Ainda não tem uma conta?
-                    <a href="#">Cadastre-se</a>
+                    <a href="cadastro.html">Cadastre-se</a>
                 </p>
             </div>
 
         </section>
 
     </main>
-<script src="script.js" defer></script>
+    <script src="firebase.js"></script>
 </body>
+
 </html>
